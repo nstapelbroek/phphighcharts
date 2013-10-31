@@ -1,0 +1,11 @@
+# Composer PHAR
+/composer.phar
+
+# Vendors
+/vendor
+
+# Eclipse project files
+/.buildpath
+/.project
+/.settings
+
