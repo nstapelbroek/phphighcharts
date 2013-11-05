@@ -6,15 +6,15 @@ class Style extends Base
     /**
      * @var string
      */
-	protected $color;
-	
+    protected $color;
+    
     /**
      * @var string
      */
-	protected $fontFamily;
-
+    protected $fontFamily;
+    
     /**
      * @var double
      */
-	protected $fontSize;
+    protected $fontSize;
 }

@@ -6,25 +6,25 @@ class Credits extends Base
     /**
      * @var boolean
      */
-	protected $enabled;
+    protected $enabled;
 
     /**
      * @var string
      */
-	protected $href;
+    protected $href;
     
     /**
      * @var PhpHighCharts\Credits\Position
      */
-	protected $position;
+    protected $position;
     
     /**
      * @var boolean
      */
-	protected $style;
+    protected $style;
     
     /**
      * @var string
      */
-	protected $text;
+    protected $text;
 }

@@ -6,22 +6,32 @@ class PlotLine extends Base
     /**
      * @var string
      */
-	protected $color;
-
+    protected $color;
+    
     /**
-     * @var float
+     * @var PhpHighCharts\PlotLine\Label
      */
-	protected $value;
+    protected $label;
     
     /**
      * @var float
      */
-	protected $width;
+    protected $value;
+    
+    /**
+     * @var float
+     */
+    protected $width;
+    
+    /**
+     * @var integer
+     */
+    protected $zIndex;
     
     public function __construct($value = null, $width = null, $color = null)
     {
         $this->setValue($value);
-        $this->setWidth($value);
+        $this->setWidth($width);
         $this->setColor($color);
     }
 }

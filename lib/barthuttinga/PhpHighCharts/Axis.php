@@ -4,9 +4,9 @@ namespace PhpHighCharts;
 class Axis extends Base
 {
     /**
-     * @var array
+     * @var PhpHighCharts\Axis\Labels
      */
-	protected $labels;
+    protected $labels;
     
     /**
      * @var array
@@ -22,4 +22,14 @@ class Axis extends Base
      * @var PhpHighCharts\Title
      */
     protected $title;
+    
+    /**
+     * @var integer
+     */
+    protected $min;
+    
+    /**
+     * @var integer
+     */
+    protected $max;
 }

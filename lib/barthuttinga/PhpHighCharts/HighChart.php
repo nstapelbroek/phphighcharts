@@ -6,22 +6,22 @@ class HighChart extends Base
     /**
      * @var PhpHighCharts\Chart
      */
-	protected $chart;
+    protected $chart;
     
     /**
      * @var PhpHighCharts\Credits
      */
-	protected $credits;
+    protected $credits;
     
     /**
      * @var array
      */
-	protected $colors = array();
+    protected $colors = array();
     
     /**
      * @var array
      */
-	protected $labels = array();
+    protected $labels = array();
     
     /**
      * @var PhpHighCharts\Title
@@ -47,7 +47,7 @@ class HighChart extends Base
      * @var PhpHighCharts\YAxis
      */
     protected $yAxis;
-
+    
     public function getMaxSeriesDataCount()
     {
         $maxDataCount = 0;

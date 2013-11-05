@@ -6,25 +6,25 @@ class Chart extends Base
     /**
      * @var string
      */
-	protected $backgroundColor;
+    protected $backgroundColor;
     
     /**
      * @var string
      */
-	protected $borderColor;
+    protected $borderColor;
     
     /**
      * @var float
      */
-	protected $borderWidth;
+    protected $borderWidth;
     
     /**
      * @var float
      */
-	protected $borderRadius;
+    protected $borderRadius;
     
     /**
      * @var string
      */
-	protected $type;
+    protected $type;
 }

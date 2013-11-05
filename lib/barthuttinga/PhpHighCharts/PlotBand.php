@@ -6,17 +6,17 @@ class PlotBand extends Base
     /**
      * @var string
      */
-	protected $color;
-
-    /**
-     * @var float
-     */
-	protected $from;
+    protected $color;
     
     /**
      * @var float
      */
-	protected $to;
+    protected $from;
+    
+    /**
+     * @var float
+     */
+    protected $to;
     
     public function __construct($from = null, $to = null, $color = null)
     {

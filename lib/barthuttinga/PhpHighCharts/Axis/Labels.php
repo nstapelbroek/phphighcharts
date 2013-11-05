@@ -1,29 +1,31 @@
 <?php
 namespace PhpHighCharts\Axis;
 
+use PhpHighCharts\Base;
+
 class Labels extends Base
 {
     /**
      * @var string
      */
-	protected $align;
+    protected $align;
 
     /**
      * @var integer
      */
-	protected $rotation;
+    protected $rotation;
 
     /**
      * @var string
      */
-	protected $overflow;
+    protected $overflow;
     
     /**
      * @var array
      */
     protected $staggerLines;
 
-    /**
+/**
      * @var PhpHighCharts\Style
      */
     protected $style;

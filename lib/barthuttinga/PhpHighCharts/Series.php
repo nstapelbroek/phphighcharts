@@ -6,22 +6,22 @@ class Series extends Base
     /**
      * @var array
      */
-	protected $data;
-
+    protected $data;
+    
     /**
      * @var string
      */
-	protected $name;
-
+    protected $name;
+    
     /**
      * @var string
      */
-	protected $type;
-
+    protected $type;
+    
     public function __construct(
-    	array $data = array(),
-    	$name = '',
-    	$type = null
+        array $data = array(),
+        $name = '',
+        $type = null
     ) {
         $this->setData($data);
         $this->setName($name);

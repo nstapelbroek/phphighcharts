@@ -1,25 +1,27 @@
 <?php
 namespace PhpHighCharts\Credits;
 
+use PhpHighCharts\Base;
+
 class Position extends Base
 {
     /**
      * @var string
      */
-	protected $align;
+    protected $align;
 
     /**
      * @var float
      */
-	protected $x;
+    protected $x;
     
     /**
      * @var string
      */
-	protected $verticalAlign;
+    protected $verticalAlign;
     
     /**
      * @var float
      */
-	protected $y;
+    protected $y;
 }

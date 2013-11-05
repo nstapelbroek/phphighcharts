@@ -1,7 +1,9 @@
 <?php
-namespace PhpHighCharts;
+namespace PhpHighCharts\PlotLine;
 
-class Title extends Base
+use PhpHighCharts\Base;
+
+class Label extends Base
 {
     /**
      * @var string
@@ -9,17 +11,12 @@ class Title extends Base
     protected $align;
     
     /**
-     * @var boolean
-     */
-    protected $floating;
-    
-    /**
      * @var integer
      */
-    protected $margin;
+    protected $rotation;
     
     /**
-     * @var CssObject
+     * @var PhpHighCharts\Style
      */
     protected $style;
     
@@ -27,22 +24,12 @@ class Title extends Base
      * @var string
      */
     protected $text;
-    
-    /**
-     * @var boolean
-     */
-    protected $useHtml;
-    
-    /**
-     * @var string
-     */
-    protected $verticalAlign;
-    
+
     /**
      * @var integer
      */
     protected $x;
-    
+
     /**
      * @var integer
      */

@@ -5,8 +5,4 @@ use HighCharts;
 
 class YAxis extends Axis
 {
-    /**
-     * @var integer
-     */
-	protected $max;
 }
