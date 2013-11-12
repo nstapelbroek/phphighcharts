@@ -4,6 +4,11 @@ namespace PhpHighCharts;
 class Series extends Base
 {
     /**
+     * @var string
+     */
+    protected $color;
+    
+    /**
      * @var array
      */
     protected $data;

@@ -7,7 +7,7 @@ class Credits extends Base
      * @var boolean
      */
     protected $enabled;
-
+    
     /**
      * @var string
      */

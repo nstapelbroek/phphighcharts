@@ -24,7 +24,17 @@ class Chart extends Base
     protected $borderRadius;
     
     /**
+     * @var integer
+     */
+    protected $height;
+    
+    /**
      * @var string
      */
     protected $type;
+    
+    /**
+     * @var integer
+     */
+    protected $width;
 }

@@ -4,9 +4,29 @@ namespace PhpHighCharts;
 class Axis extends Base
 {
     /**
+     * @var integer
+     */
+    protected $gridLineWidth;
+    
+    /**
      * @var PhpHighCharts\Axis\Labels
      */
     protected $labels;
+    
+    /**
+     * @var integer
+     */
+    protected $lineWidth;
+    
+    /**
+     * @var integer
+     */
+    protected $max;
+    
+    /**
+     * @var integer
+     */
+    protected $min;
     
     /**
      * @var array
@@ -19,17 +39,17 @@ class Axis extends Base
     protected $plotLines;
     
     /**
+     * @var integer
+     */
+    protected $tickLength;
+    
+    /**
+     * @var integer
+     */
+    protected $tickWidth;
+    
+    /**
      * @var PhpHighCharts\Title
      */
     protected $title;
-    
-    /**
-     * @var integer
-     */
-    protected $min;
-    
-    /**
-     * @var integer
-     */
-    protected $max;
 }

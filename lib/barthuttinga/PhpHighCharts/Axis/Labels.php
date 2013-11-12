@@ -9,12 +9,17 @@ class Labels extends Base
      * @var string
      */
     protected $align;
-
+    
+    /**
+     * @var boolean
+     */
+    protected $enabled;
+    
     /**
      * @var integer
      */
     protected $rotation;
-
+    
     /**
      * @var string
      */
@@ -24,8 +29,8 @@ class Labels extends Base
      * @var array
      */
     protected $staggerLines;
-
-/**
+    
+    /**
      * @var PhpHighCharts\Style
      */
     protected $style;

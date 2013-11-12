@@ -24,25 +24,35 @@ class HighChart extends Base
     protected $labels = array();
     
     /**
+     * @var PhpHighCharts\Legend
+     */
+    protected $legend;
+    
+    /**
+     * @var PhpHighCharts\PlotOptions
+     */
+    protected $plotOptions;
+    
+    /**
      * @var PhpHighCharts\Title
      */
     protected $title;
-
+    
     /**
      * @var PhpHighCharts\Subtitle
      */
     protected $subtitle;
-
+    
     /**
      * @var array
      */
     protected $series = array();
-
+    
     /**
      * @var PhpHighCharts\XAxis
      */
     protected $xAxis;
-
+    
     /**
      * @var PhpHighCharts\YAxis
      */
