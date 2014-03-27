@@ -6,7 +6,7 @@ PHP wrapper for creating HighCharts in an object oriented way.
 Authors
 -------
 
-* Bart Huttinga <bart@qaraqter.nl>
+* Bart Huttinga <barthuttinga@gmail.com>
 
 Requirements
 ------------
@@ -16,7 +16,7 @@ Requirements
 Installation
 ------------
 
- 1. Add the library to your requirementsdependencies:
+ 1. Add the library to composer.json:
 
 ```
 // composer.json
