@@ -3,15 +3,25 @@ namespace PhpHighCharts;
 
 abstract class Base
 {
-    public function __toString()
+    public function toJson()
     {
         return json_encode($this->getConfiguration());
+    }
+
+    public function toUrlEncodedJson()
+    {
+        return urlencode($this->toJson());
+    }
+
+    public function __toString()
+    {
+        return $this->toJson();
     }
 
     public function __call($method, $arguments)
     {
         $reflectionClass = new \ReflectionClass($this);
-        
+
         if (preg_match('/^(get|set|add|remove)(.*)$/', $method, $matches)) {
             $methodType   = $matches[1];
             $propertyName = lcfirst($matches[2]);
@@ -24,11 +34,11 @@ abstract class Base
                 )
             );
         }
-        
+
         if (in_array($methodType, array('add', 'remove'))) {
             $propertyName = $this->pluralize($propertyName);
         }
-        
+
         if (!$reflectionClass->hasProperty($propertyName)) {
             throw new \InvalidArgumentException(
                 sprintf(
@@ -38,7 +48,7 @@ abstract class Base
                 )
             );
         }
-        
+
         if ($methodType === 'get') {
             if (count($arguments) > 0) {
                 throw new \InvalidArgumentException(
@@ -62,15 +72,15 @@ abstract class Base
                 $propertyValue = $arguments[0];
             }
         }
-        
+
         $typeHint = $this->getPropertyTypeHint(
             $reflectionClass->getProperty($propertyName)
         );
-        
+
         $nonObjectTypes = array('boolean', 'integer', 'float', 'double', 'string', 'array');
-        
+
         switch ($methodType) {
-            
+
             case 'get':
                 if (empty($this->$propertyName)
                     && $typeHint
@@ -78,9 +88,9 @@ abstract class Base
                 ) {
                     $this->$propertyName = new $typeHint;
                 }
-                
+
                 return $this->$propertyName;
-            
+
             case 'set':
                 if ($typeHint
                     && !in_array($typeHint, $nonObjectTypes)
@@ -92,19 +102,19 @@ abstract class Base
                             $reflectionClass->getName(),
                             $method,
                             $typeHint,
-                            get_class($propertyValue)                                
+                            get_class($propertyValue)
                         )
                     );
                 }
                 $this->$propertyName = $propertyValue;
-                
+
                 return $this;
-            
+
             case 'add':
                 $this->{$propertyName}[] = $propertyValue;
-                
+
                 return $this;
-            
+
             default:
                 throw new \RuntimeException(
                     sprintf(
@@ -113,14 +123,14 @@ abstract class Base
                     )
                 );
         }
-        
+
         return $this;
     }
-    
+
     protected function getConfiguration()
     {
         $reflectionClass = new \ReflectionClass($this);
-        
+
         $data = array();
         foreach ($reflectionClass->getProperties() as $reflectionProperty) {
             $propertyName = $reflectionProperty->name;
@@ -151,10 +161,10 @@ abstract class Base
                 $data[$propertyName] = $propertyValue;
             }
         }
-        
+
         return $data;
     }
-    
+
     private function getPropertyTypeHint(\ReflectionProperty $property)
     {
         $docComment = $property->getDocComment();
@@ -162,16 +172,16 @@ abstract class Base
             $typeHint = $matches[1];
                return $typeHint;
         }
-        
+
         return false;
     }
-    
+
     private function pluralize($propertyName)
     {
         if (preg_match('/s$/', $propertyName)) {
             return $propertyName;
         }
-        
+
         return $propertyName . 's';
     }
 }
