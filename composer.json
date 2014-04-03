@@ -1,5 +1,5 @@
 {
-	"name" : "barthuttinga/phphighcharts",
+	"name" : "qaraqter/phphighcharts",
 	"type" : "library",
 	"description" : "PHP wrapper for HighCharts",
 	"keywords" : [
@@ -9,12 +9,12 @@
 	"license" : "MIT",
 	"authors" : [{
 			"name" : "Bart Huttinga",
-			"email" : "barthuttinga@gmail.com"
+			"email" : "bart@qaraqter.nl"
 		}
 	],
 	"autoload" : {
 		"psr-0" : {
-			"PhpHighCharts\\" : "lib/barthuttinga/"
+			"PhpHighCharts\\" : "lib/"
 		}
 	}
 }
