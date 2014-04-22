@@ -19,6 +19,11 @@ class HighChart extends Base
     protected $colors = array();
 
     /**
+     * @var PhpHighCharts\Exporting
+     */
+    protected $exporting;
+
+    /**
      * @var array
      */
     protected $labels = array();
