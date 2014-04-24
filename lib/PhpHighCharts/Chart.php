@@ -29,6 +29,31 @@ class Chart extends Base
     protected $height;
 
     /**
+     * @var array
+     */
+    protected $margin;
+
+    /**
+     * @var float
+     */
+    protected $marginBottom;
+
+    /**
+     * @var float
+     */
+    protected $marginLeft;
+
+    /**
+     * @var float
+     */
+    protected $marginRight;
+
+    /**
+     * @var float
+     */
+    protected $marginTop;
+
+    /**
      * @var boolean
      */
     protected $polar;
@@ -37,6 +62,31 @@ class Chart extends Base
      * @var string
      */
     protected $renderTo;
+
+    /**
+     * @var array
+     */
+    protected $spacing;
+
+    /**
+     * @var float
+     */
+    protected $spacingBottom;
+
+    /**
+     * @var float
+     */
+    protected $spacingLeft;
+
+    /**
+     * @var float
+     */
+    protected $spacingRight;
+
+    /**
+     * @var float
+     */
+    protected $spacingTop;
 
     /**
      * @var string

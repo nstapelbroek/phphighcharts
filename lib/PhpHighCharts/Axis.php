@@ -4,7 +4,7 @@ namespace PhpHighCharts;
 class Axis extends Base
 {
     /**
-     * @var integer
+     * @var float
      */
     protected $gridLineWidth;
 
@@ -14,22 +14,32 @@ class Axis extends Base
     protected $labels;
 
     /**
-     * @var integer
+     * @var float
      */
     protected $lineWidth;
 
     /**
-     * @var integer
+     * @var float
      */
     protected $max;
 
     /**
-     * @var integer
+     * @var float
+     */
+    protected $maxPadding;
+
+    /**
+     * @var float
      */
     protected $min;
 
     /**
-     * @var integer
+     * @var float
+     */
+    protected $minPadding;
+
+    /**
+     * @var float
      */
     protected $minRange;
 
@@ -49,12 +59,12 @@ class Axis extends Base
     protected $showLastLabel;
 
     /**
-     * @var integer
+     * @var float
      */
     protected $tickInterval;
 
     /**
-     * @var integer
+     * @var float
      */
     protected $tickLength;
 
@@ -64,7 +74,7 @@ class Axis extends Base
     protected $tickmarkPlacement;
 
     /**
-     * @var integer
+     * @var float
      */
     protected $tickWidth;
 
