@@ -140,6 +140,12 @@ abstract class Base
                 if (!empty($configuration)) {
                     $data[$propertyName] = $configuration;
                 }
+            } elseif ($propertyValue instanceof \DateTime) {
+                $data[$propertyName] = $propertyValue->getTimestamp();
+            } elseif ($propertyValue instanceof \DateInterval) {
+                $date = new \DateTime();
+                $date->setTimestamp(0)->add($propertyValue);
+                $data[$propertyName] = $date->getTimestamp();
             } elseif (is_array($propertyValue)) {
                 if (!empty($propertyValue)) {
                     $properties = $propertyValue;

@@ -82,4 +82,9 @@ class Axis extends Base
      * @var PhpHighCharts\Title
      */
     protected $title;
+
+    /**
+     * @var string
+     */
+    protected $type;
 }

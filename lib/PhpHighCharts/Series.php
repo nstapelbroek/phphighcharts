@@ -19,6 +19,16 @@ class Series extends Base
     protected $name;
 
     /**
+     * @var \DateInterval
+     */
+    protected $pointInterval;
+
+    /**
+     * @var \DateTime
+     */
+    protected $pointStart;
+
+    /**
      * @var string
      */
     protected $type;
@@ -36,7 +46,11 @@ class Series extends Base
     public function setData($data)
     {
         foreach ($data as &$value) {
+            if ($value instanceof Series\Data) {
+                //
+            } else {
             $value = (double) $value;
+            }
         }
         $this->data = $data;
 
