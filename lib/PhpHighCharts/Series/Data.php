@@ -19,7 +19,7 @@ class Data extends Base
     {
         if ($this->key instanceof \DateTime) {
             return array(
-                1000 * $this->date->getTimestamp(),
+                1000 * $this->key->getTimestamp(),
                 (float) $this->value,
             );
         }
