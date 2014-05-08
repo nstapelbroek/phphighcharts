@@ -5,21 +5,28 @@ use PhpHighCharts\Base;
 
 class Data extends Base
 {
-    private $date;
+    private $key;
 
     private $value;
 
-    public function __construct(\DateTime $date, $value)
+    public function __construct($key, $value)
     {
-        $this->date = $date;
+        $this->key = $key;
         $this->value = $value;
     }
 
     public function getConfiguration()
     {
+        if ($this->key instanceof \DateTime) {
+            return array(
+                1000 * $this->date->getTimestamp(),
+                (float) $this->value,
+            );
+        }
+
         return array(
-            1000 * $this->date->getTimestamp(),
-            (float) $this->value
+            (string) $this->key,
+            (float) $this->value,
         );
     }
 }
