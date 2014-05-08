@@ -16,6 +16,16 @@ class Series extends Base
     /**
      * @var string
      */
+    protected $drilldown;
+
+    /**
+     * @var string
+     */
+    protected $innerSize;
+
+    /**
+     * @var string
+     */
     protected $name;
 
     /**
@@ -27,6 +37,11 @@ class Series extends Base
      * @var \DateTime
      */
     protected $pointStart;
+
+    /**
+     * @var string
+     */
+    protected $size;
 
     /**
      * @var string

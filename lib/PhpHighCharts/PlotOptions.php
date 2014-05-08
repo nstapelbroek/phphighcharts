@@ -9,6 +9,11 @@ class PlotOptions extends Base
     protected $bar;
 
     /**
+     * @var PhpHighCharts\PlotOptions\Pie
+     */
+    protected $pie;
+
+    /**
      * @var PhpHighCharts\PlotOptions\Series
      */
     protected $series;

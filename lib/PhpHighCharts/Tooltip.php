@@ -17,4 +17,9 @@ class Tooltip extends Base
      * @var string
      */
     protected $valuePrefix;
+
+    /**
+     * @var string
+     */
+    protected $valueSuffix;
 }
