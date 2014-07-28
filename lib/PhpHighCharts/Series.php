@@ -9,6 +9,11 @@ class Series extends Base
     protected $color;
 
     /**
+     * @var boolean
+     */
+    protected $colorByPoint;
+
+    /**
      * @var array
      */
     protected $data;
