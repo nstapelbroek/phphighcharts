@@ -4,6 +4,11 @@ namespace PhpHighCharts;
 class Axis extends Base
 {
     /**
+     * @var string
+     */
+    protected $gridLineColor;
+
+    /**
      * @var float
      */
     protected $gridLineWidth;
@@ -42,6 +47,11 @@ class Axis extends Base
      * @var float
      */
     protected $minRange;
+
+    /**
+     * @var boolean
+     */
+    protected $opposite;
 
     /**
      * @var array

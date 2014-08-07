@@ -54,6 +54,11 @@ class Chart extends Base
     protected $marginTop;
 
     /**
+     * @var PhpHighCharts\Chart\Options3d
+     */
+    protected $options3d;
+
+    /**
      * @var boolean
      */
     protected $polar;
