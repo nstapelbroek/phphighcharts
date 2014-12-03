@@ -7,7 +7,7 @@ Authors
 -------
 
 * Bart Huttinga <barthuttinga@gmail.com>
-
+* Robin Rijkeboer <rmrijkeboer@gmail.com>
 Requirements
 ------------
 

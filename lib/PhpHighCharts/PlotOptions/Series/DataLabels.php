@@ -29,4 +29,9 @@ class DataLabels extends Base
      * @var integer
      */
     protected $y;
+
+    /**
+     * @var PhpHighCharts\PlotOptions\Series\Style
+     */
+    protected $style;
 }
