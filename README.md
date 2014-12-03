@@ -88,4 +88,4 @@ Then render it:
 Reporting an issue or a feature request
 ---------------------------------------
 
-Issues and feature requests are tracked in the [GitHub issue tracker](https://github.com/barthuttinga/phphighcharts/issues).
+Issues and feature requests are tracked in the [GitHub issue tracker](https://github.com/qaraqter/phphighcharts/issues).
