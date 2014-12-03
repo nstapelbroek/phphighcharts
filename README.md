@@ -28,7 +28,7 @@ Installation
         }
     ],
     "require":{
-        "barthuttinga/phphighcharts": "dev-master"
+        "qaraqter/phphighcharts": "dev-master"
     }
 }
 ```
