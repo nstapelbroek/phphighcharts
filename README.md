@@ -24,7 +24,7 @@ Installation
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/barthuttinga/phphighcharts"
+            "url": "https://github.com/qaraqter/phphighcharts"
         }
     ],
     "require":{
@@ -36,7 +36,7 @@ Installation
  2. Use Composer to download and install the library:
 
 ```
-$ php composer.phar update barthuttinga/phphighcharts
+$ php composer.phar update qaraqter/phphighcharts
 ```
 
 Usage
