@@ -104,6 +104,11 @@ class Axis extends Base
     protected $startOnTick;
 
     /**
+     * @var  int
+     */
+    protected $tickAmount;
+
+    /**
      * @var boolean
      */
     protected $endOnTick;
