@@ -19,4 +19,9 @@ class Column extends Base
      * @var PhpHighCharts\PlotOptions\Series\DataLabels
      */
     protected $dataLabels;
+
+    /**
+     * @var integer
+     */
+    protected $pointWidth;
 }

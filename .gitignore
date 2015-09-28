@@ -4,3 +4,6 @@
 /.buildpath
 /.project
 /.settings
+
+#PHPstorm Project Files
+/.idea
