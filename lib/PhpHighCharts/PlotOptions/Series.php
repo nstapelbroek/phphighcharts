@@ -9,4 +9,9 @@ class Series extends Base
      * @var PhpHighCharts\PlotOptions\Series\DataLabels
      */
     protected $dataLabels;
+
+    /**
+     * @var boolean
+     */
+    protected $animation;
 }
