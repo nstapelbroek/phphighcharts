@@ -71,6 +71,11 @@ class Legend extends Base
      * @var float
      */
     protected $symbolPadding;
+    
+    /**
+     * @var float
+     */
+    protected $symbolRadius;
 
     /**
      * @var float
